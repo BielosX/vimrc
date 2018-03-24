@@ -56,8 +56,6 @@ Plugin 'tikhomirov/vim-glsl'
 
 Plugin 'eagletmt/neco-ghc'
 
-Plugin 'shougo/neocomplete.vim'
-
 Plugin 'scrooloose/syntastic'
 
 Plugin 'lukerandall/haskellmode-vim'
@@ -69,6 +67,16 @@ Plugin 'VimClojure'
 Plugin 'paredit.vim'
 
 Plugin 'tpope/vim-fireplace'
+
+Plugin 'eagletmt/ghcmod-vim'
+
+Plugin 'Shougo/vimproc.vim'
+
+Plugin 'Shougo/deoplete.nvim'
+
+Plugin 'roxma/nvim-yarp'
+
+Plugin 'roxma/vim-hug-neovim-rpc'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -116,7 +124,8 @@ set shiftwidth=4
 " " On pressing tab, insert 4 spaces
 set expandtab
 
-let g:neocomplete#enable_at_startup = 1
+let g:deoplete#enable_at_startup = 1
+let g:necoghc_enable_detailed_browse = 1
 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}

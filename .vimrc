@@ -54,11 +54,7 @@ Plugin 'rdnetto/ycm-generator'
 
 Plugin 'tikhomirov/vim-glsl'
 
-Plugin 'eagletmt/neco-ghc'
-
 Plugin 'scrooloose/syntastic'
-
-Plugin 'lukerandall/haskellmode-vim'
 
 Plugin 'HerringtonDarkholme/yats'
 
@@ -67,8 +63,6 @@ Plugin 'VimClojure'
 Plugin 'paredit.vim'
 
 Plugin 'tpope/vim-fireplace'
-
-Plugin 'eagletmt/ghcmod-vim'
 
 Plugin 'Shougo/vimproc.vim'
 
@@ -81,6 +75,8 @@ Plugin 'roxma/vim-hug-neovim-rpc'
 Plugin 'purescript-contrib/purescript-vim'
 
 Plugin 'calebsmith/vim-lambdify'
+
+Plugin 'hashivim/vim-terraform'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -118,6 +114,8 @@ noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
 
+tnoremap <Esc> <C-\><C-n>
+
 set laststatus=2
 
 filetype plugin indent on
@@ -140,4 +138,5 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-let g:haddock_browser="/usr/bin/google-chrome-stable"
+let g:haddock_browser="/usr/bin/chromium"
+let g:haddock_docdir="/usr/share/doc/ghc/html/"
